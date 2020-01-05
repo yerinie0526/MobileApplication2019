@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/food"
+                tools:srcCompat="@mipmap/food" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:text="메뉴이름"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnSetPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="사진 설정" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="에) 스타벅스 아메리카노"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가격"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fcost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="예) 4100"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:text="구매 지점"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnSetFoodPlace"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="지점검색" />
+
+                <Button
+                    android:id="@+id/btnSetFoodLoc"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="위치 보기" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/floc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="후기"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/freview"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="예) 가격에비해 맛이 있는지는 잘 모르겠다."
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="평가" />
+
+            <RatingBar
+                android:id="@+id/frate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnInsertFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="음식 추가" />
+
+                <Button
+                    android:id="@+id/btnCancelInsertFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="취소" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
